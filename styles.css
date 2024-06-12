@@ -1,0 +1,105 @@
+/* styles.css */
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 100vh;*/
+/*    margin: 0;*/
+/*}*/
+
+.move-left {
+    transform: translateX(-100px); /* Move element to the right */
+}
+.move-right {
+    transform: translateX(100px); /* Move element to the right */
+}
+.move-up {
+    transform: translateY(-100px); /* Move element to the right */
+}
+.move-down {
+    transform: translateY(100px); /* Move element to the right */
+}
+
+.movable {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative; /* or absolute, fixed, depending on your needs */
+    transition: top 0.3s ease, left 0.3s ease; /* Animate both top and left over 0.3 seconds */
+    top: 0;
+    left: 0;
+
+    /*position: relative;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*background-color: red;*/
+    /*transition: top 0.3s ease, left 0.3s ease;*/
+    /*!* Initial position *!*/
+    /*top: 0px;*/
+    /*left: 0px;*/
+}
+
+
+.game-container {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    grid-gap: 10px; /* Space between rows and columns */
+}
+
+.taken {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 50px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    position: relative; /* or absolute, fixed, depending on your needs */
+    /*transition: transform 0.3s ease-out; !* Animation duration and timing function *!*/
+    transition: top 0.3s ease, left 0.3s ease; /* Animate both top and left over 0.3 seconds */
+
+}
+
+.empty {
+    width: 100px;
+    height: 100px;
+    background-color: #d0d0d0;
+    text-align: center;
+    line-height: 100px;
+    top: 0;
+    left: 0;
+
+    position: relative; /* or absolute, fixed, depending on your needs */
+    /*transition: transform 0.3s ease-out; !* Animation duration and timing function *!*/
+    transition: top 0.3s ease, left 0.3s ease; /* Animate both top and left over 0.3 seconds */
+}
+
+
+/*h1 {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.grid {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(4, 100px);*/
+/*    grid-gap: 10px;*/
+/*}*/
+
+/*.grid-cell {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: #cdc1b4;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-size: 30px;*/
+/*    font-weight: bold;*/
+/*    color: #776e65;*/
+/*}*/

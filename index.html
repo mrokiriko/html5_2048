@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>2048</h1>
+
+<div id="myDiv" class="movable"></div>
+
+<div class="game-container" style="position: absolute">
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+</div>
+<div id="gameContainer" class="game-container">
+
+<!--    <div id="grid" class="grid">-->
+<!--        &lt;!&ndash; 16 grid cells will be created by JavaScript &ndash;&gt;-->
+<!--    </div>-->
+</div>
+<br>
+<br>
+<button onclick="run()">run</button>
+<button onclick="moveUp()">UP</button>
+<button onclick="moveLeft()">LEFT</button>
+<button onclick="moveRight()">RIGHT</button>
+<button onclick="moveDown()">DOWN</button>
+<script src="script.js"></script>
+</body>
+</html>
